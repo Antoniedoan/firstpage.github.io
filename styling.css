@@ -1,0 +1,43 @@
+
+h1 {
+    text-decoration: underline;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    font-family: 'Oswald', sans-serif;
+    border: 12px solid beige;
+}
+.change{
+    color:red;
+    text-shadow: 0px 0px 0px green;
+    transition-property: color;
+    transition-duration: 500ms;
+    transition-timing-function: linear;
+}
+.change:hover{
+    color: blue;
+    text-shadow: 15px 5px 5px blue;
+
+}
+h1:after{
+    content: "[link]";
+}
+.display{
+    display: inline;
+    padding: 10px;
+    margin:30px;
+}
+.menu{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: grey;
+    border-bottom: 3px solid transparent;
+    opacity: 0.25;
+  
+    transition-timing-function: linear;
+    transition-property: border-bottom; 
+    transition-duration: 10ms;
+}
+.menu:hover{
+    border-bottom-color: blue;
+    opacity:1;
+    
+}
